@@ -2,15 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-13T14:15:36 UTC" name="Surefire suite" finished-at="2026-10-13T14:15:36 UTC" duration-ms="102">
+  <suite started-at="2026-10-13T17:45:23 UTC" name="Surefire suite" finished-at="2026-10-13T17:45:30 UTC" duration-ms="7724">
     <groups>
     </groups>
-    <test started-at="2026-10-13T14:15:36 UTC" name="Surefire test" finished-at="2026-10-13T14:15:36 UTC" duration-ms="102">
+    <test started-at="2026-10-13T17:45:23 UTC" name="Surefire test" finished-at="2026-10-13T17:45:30 UTC" duration-ms="7724">
       <class name="tests.LoginTest">
-        <test-method signature="verifyTestNGIsWorking()[pri:0, instance:tests.LoginTest@27fe3806]" started-at="2026-10-13T14:15:36 UTC" name="verifyTestNGIsWorking" finished-at="2026-10-13T14:15:36 UTC" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@de3a06f]" started-at="2026-10-13T17:45:23 UTC" name="setup" finished-at="2026-10-13T17:45:30 UTC" duration-ms="7493" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTestNGIsWorking -->
+        </test-method> <!-- setup -->
+        <test-method signature="verifyOrangeHRMLoginPage()[pri:0, instance:tests.LoginTest@de3a06f]" started-at="2026-10-13T17:45:30 UTC" name="verifyOrangeHRMLoginPage" finished-at="2026-10-13T17:45:30 UTC" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrangeHRMLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@de3a06f]" started-at="2026-10-13T17:45:30 UTC" name="tearDown" finished-at="2026-10-13T17:45:30 UTC" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
