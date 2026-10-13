@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-13T14:15:36 UTC" name="Surefire suite" finished-at="2026-10-13T14:15:36 UTC" duration-ms="102">
+    <groups>
+    </groups>
+    <test started-at="2026-10-13T14:15:36 UTC" name="Surefire test" finished-at="2026-10-13T14:15:36 UTC" duration-ms="102">
+      <class name="tests.LoginTest">
+        <test-method signature="verifyTestNGIsWorking()[pri:0, instance:tests.LoginTest@27fe3806]" started-at="2026-10-13T14:15:36 UTC" name="verifyTestNGIsWorking" finished-at="2026-10-13T14:15:36 UTC" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestNGIsWorking -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
