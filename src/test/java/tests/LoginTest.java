@@ -1,15 +1,24 @@
 package tests;
 
+import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import base.BaseTest;
+import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
+
 	@Test
-	public void verifyOrangeHRMLoginPage() {
-        String pageTitle = driver.getTitle();
-        System.out.println("Page Title: " + pageTitle);
-		System.out.println("Current URL: " + driver.getCurrentUrl());
-		Assert.assertTrue(pageTitle.contains("OrangeHRM"), "OrangeHRM login page title was not displayed.");    
-	}
+	public void verifySuccessfulLogin() {
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.enterUsername("Admin");
+		loginPage.enterPassword("admin123");
+		loginPage.clickLogin();
+
+		String currentUrl = driver.getCurrentUrl();
+
+		System.out.println("Current URL after login: " + currentUrl);
+
+		// Verify successful login by checking the presence of a specific element on the dashboard
+		Assert.assertTrue(currentUrl.contains("/dashboard"), "Dashboard URL not Displayed after login.");
+}
 }
