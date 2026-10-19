@@ -4,6 +4,7 @@ import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
+import pages.DashboardPage;
 
 public class LoginTest extends BaseTest {
 
@@ -14,11 +15,7 @@ public class LoginTest extends BaseTest {
 		loginPage.enterPassword("admin123");
 		loginPage.clickLogin();
 
-		String currentUrl = driver.getCurrentUrl();
-
-		System.out.println("Current URL after login: " + currentUrl);
-
-		// Verify successful login by checking the presence of a specific element on the dashboard
-		Assert.assertTrue(currentUrl.contains("/dashboard"), "Dashboard URL not Displayed after login.");
-}
+		DashboardPage dashboardPage = new DashboardPage(driver);
+		Assert.assertTrue(dashboardPage.isDashboardDisplayed(), "Dashboard not displayed after login.");
+	}
 }
