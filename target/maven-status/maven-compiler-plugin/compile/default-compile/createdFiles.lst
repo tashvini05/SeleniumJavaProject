@@ -1,3 +1,4 @@
 pages/DashboardPage.class
+utils/ConfigReader.class
 pages/LoginPage.class
 base/BaseTest.class
